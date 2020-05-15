@@ -12,3 +12,7 @@ names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
 duplicates = []  # Return the list of duplicates in this data structure
+
+end_time = time.time()
+print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
+print (f"runtime: {end_time - start_time} seconds")
